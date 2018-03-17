@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		326B088F205DDE0E0023051D /* donnees.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B088D205DDE0E0023051D /* donnees.cpp */; };
+		326B0892205DDE400023051D /* ensembleDonnees1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B0890205DDE400023051D /* ensembleDonnees1.cpp */; };
+		326B0895205DDE520023051D /* ensembleDonnees2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B0893205DDE520023051D /* ensembleDonnees2.cpp */; };
+		326B0898205DDE680023051D /* resultat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B0896205DDE680023051D /* resultat.cpp */; };
+		326B089B205DDE800023051D /* regle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B0899205DDE800023051D /* regle.cpp */; };
+		326B089E205DDE8E0023051D /* regleModification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B089C205DDE8E0023051D /* regleModification.cpp */; };
+		326B08A1205DDEA00023051D /* regleDebut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B089F205DDEA00023051D /* regleDebut.cpp */; };
+		326B08A4205DDEAB0023051D /* regleFin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B08A2205DDEAB0023051D /* regleFin.cpp */; };
+		326B08A7205DDEBB0023051D /* r1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B08A5205DDEBB0023051D /* r1.cpp */; };
+		326B08AA205DDEEF0023051D /* r2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B08A8205DDEEF0023051D /* r2.cpp */; };
+		326B08AD205DDEFB0023051D /* r3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B08AB205DDEFB0023051D /* r3.cpp */; };
+		326B08B0205DDF0E0023051D /* r4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B08AE205DDF0E0023051D /* r4.cpp */; };
+		326B08B3205DDF1C0023051D /* r5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B08B1205DDF1C0023051D /* r5.cpp */; };
+		326B08B6205DDF250023051D /* r6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B08B4205DDF250023051D /* r6.cpp */; };
 		326E97E7205C98A900302C2F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326E97E6205C98A900302C2F /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +37,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		326B088D205DDE0E0023051D /* donnees.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = donnees.cpp; sourceTree = "<group>"; };
+		326B088E205DDE0E0023051D /* donnees.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = donnees.h; sourceTree = "<group>"; };
+		326B0890205DDE400023051D /* ensembleDonnees1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ensembleDonnees1.cpp; sourceTree = "<group>"; };
+		326B0891205DDE400023051D /* ensembleDonnees1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ensembleDonnees1.h; sourceTree = "<group>"; };
+		326B0893205DDE520023051D /* ensembleDonnees2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ensembleDonnees2.cpp; sourceTree = "<group>"; };
+		326B0894205DDE520023051D /* ensembleDonnees2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ensembleDonnees2.h; sourceTree = "<group>"; };
+		326B0896205DDE680023051D /* resultat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = resultat.cpp; sourceTree = "<group>"; };
+		326B0897205DDE680023051D /* resultat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = resultat.h; sourceTree = "<group>"; };
+		326B0899205DDE800023051D /* regle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = regle.cpp; sourceTree = "<group>"; };
+		326B089A205DDE800023051D /* regle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = regle.h; sourceTree = "<group>"; };
+		326B089C205DDE8E0023051D /* regleModification.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = regleModification.cpp; sourceTree = "<group>"; };
+		326B089D205DDE8E0023051D /* regleModification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = regleModification.h; sourceTree = "<group>"; };
+		326B089F205DDEA00023051D /* regleDebut.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = regleDebut.cpp; sourceTree = "<group>"; };
+		326B08A0205DDEA00023051D /* regleDebut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = regleDebut.h; sourceTree = "<group>"; };
+		326B08A2205DDEAB0023051D /* regleFin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = regleFin.cpp; sourceTree = "<group>"; };
+		326B08A3205DDEAB0023051D /* regleFin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = regleFin.h; sourceTree = "<group>"; };
+		326B08A5205DDEBB0023051D /* r1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = r1.cpp; sourceTree = "<group>"; };
+		326B08A6205DDEBB0023051D /* r1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = r1.h; sourceTree = "<group>"; };
+		326B08A8205DDEEF0023051D /* r2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = r2.cpp; sourceTree = "<group>"; };
+		326B08A9205DDEEF0023051D /* r2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = r2.h; sourceTree = "<group>"; };
+		326B08AB205DDEFB0023051D /* r3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = r3.cpp; sourceTree = "<group>"; };
+		326B08AC205DDEFB0023051D /* r3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = r3.h; sourceTree = "<group>"; };
+		326B08AE205DDF0E0023051D /* r4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = r4.cpp; sourceTree = "<group>"; };
+		326B08AF205DDF0E0023051D /* r4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = r4.h; sourceTree = "<group>"; };
+		326B08B1205DDF1C0023051D /* r5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = r5.cpp; sourceTree = "<group>"; };
+		326B08B2205DDF1C0023051D /* r5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = r5.h; sourceTree = "<group>"; };
+		326B08B4205DDF250023051D /* r6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = r6.cpp; sourceTree = "<group>"; };
+		326B08B5205DDF250023051D /* r6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = r6.h; sourceTree = "<group>"; };
 		326E97E3205C98A900302C2F /* lesRegles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lesRegles; sourceTree = BUILT_PRODUCTS_DIR; };
 		326E97E6205C98A900302C2F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +100,34 @@
 			isa = PBXGroup;
 			children = (
 				326E97E6205C98A900302C2F /* main.cpp */,
+				326B088D205DDE0E0023051D /* donnees.cpp */,
+				326B088E205DDE0E0023051D /* donnees.h */,
+				326B0890205DDE400023051D /* ensembleDonnees1.cpp */,
+				326B0891205DDE400023051D /* ensembleDonnees1.h */,
+				326B0893205DDE520023051D /* ensembleDonnees2.cpp */,
+				326B0894205DDE520023051D /* ensembleDonnees2.h */,
+				326B0896205DDE680023051D /* resultat.cpp */,
+				326B0897205DDE680023051D /* resultat.h */,
+				326B0899205DDE800023051D /* regle.cpp */,
+				326B089A205DDE800023051D /* regle.h */,
+				326B089C205DDE8E0023051D /* regleModification.cpp */,
+				326B089D205DDE8E0023051D /* regleModification.h */,
+				326B089F205DDEA00023051D /* regleDebut.cpp */,
+				326B08A0205DDEA00023051D /* regleDebut.h */,
+				326B08A2205DDEAB0023051D /* regleFin.cpp */,
+				326B08A3205DDEAB0023051D /* regleFin.h */,
+				326B08A5205DDEBB0023051D /* r1.cpp */,
+				326B08A6205DDEBB0023051D /* r1.h */,
+				326B08A8205DDEEF0023051D /* r2.cpp */,
+				326B08A9205DDEEF0023051D /* r2.h */,
+				326B08AB205DDEFB0023051D /* r3.cpp */,
+				326B08AC205DDEFB0023051D /* r3.h */,
+				326B08AE205DDF0E0023051D /* r4.cpp */,
+				326B08AF205DDF0E0023051D /* r4.h */,
+				326B08B1205DDF1C0023051D /* r5.cpp */,
+				326B08B2205DDF1C0023051D /* r5.h */,
+				326B08B4205DDF250023051D /* r6.cpp */,
+				326B08B5205DDF250023051D /* r6.h */,
 			);
 			path = lesRegles;
 			sourceTree = "<group>";
@@ -119,6 +189,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326B08B0205DDF0E0023051D /* r4.cpp in Sources */,
+				326B08A7205DDEBB0023051D /* r1.cpp in Sources */,
+				326B08B3205DDF1C0023051D /* r5.cpp in Sources */,
+				326B0892205DDE400023051D /* ensembleDonnees1.cpp in Sources */,
+				326B08AA205DDEEF0023051D /* r2.cpp in Sources */,
+				326B089B205DDE800023051D /* regle.cpp in Sources */,
+				326B08AD205DDEFB0023051D /* r3.cpp in Sources */,
+				326B08A1205DDEA00023051D /* regleDebut.cpp in Sources */,
+				326B088F205DDE0E0023051D /* donnees.cpp in Sources */,
+				326B089E205DDE8E0023051D /* regleModification.cpp in Sources */,
+				326B08B6205DDF250023051D /* r6.cpp in Sources */,
+				326B08A4205DDEAB0023051D /* regleFin.cpp in Sources */,
+				326B0895205DDE520023051D /* ensembleDonnees2.cpp in Sources */,
+				326B0898205DDE680023051D /* resultat.cpp in Sources */,
 				326E97E7205C98A900302C2F /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
