@@ -11,4 +11,10 @@
 
 #include <stdio.h>
 
+class EnsembleDonnees1{
+public:
+    EnsembleDonnees1();
+    ~EnsembleDonnees1();
+};
+
 #endif /* ensembleDonnees1_h */
