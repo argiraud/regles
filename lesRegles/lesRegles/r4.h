@@ -8,7 +8,13 @@
 
 #ifndef r4_h
 #define r4_h
-
+#include "regleModification.h"
 #include <stdio.h>
-
+class R4:public RegleModification{
+public:
+    R4();
+    ~R4();
+protected:
+    void executerRegleModification();
+};
 #endif /* r4_h */

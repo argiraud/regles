@@ -8,7 +8,13 @@
 
 #ifndef regleDebut_h
 #define regleDebut_h
-
+#include "regleModification.h"
 #include <stdio.h>
-
+class RegleDebut: public RegleModification{
+public:
+    RegleDebut();
+    ~RegleDebut();
+protected:
+   void executerRegleModification();
+};
 #endif /* regleDebut_h */

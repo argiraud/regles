@@ -8,7 +8,15 @@
 
 #ifndef regleModification_h
 #define regleModification_h
-
+#include "regle.h"
 #include <stdio.h>
-
+#include <string>
+using namespace std;
+class RegleModification : Regle{
+public:
+    RegleModification(string id);
+    ~RegleModification();
+    bool executerRegle();
+    void executerRegleModification();
+};
 #endif /* regleModification_h */

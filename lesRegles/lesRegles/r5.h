@@ -9,6 +9,13 @@
 #ifndef r5_h
 #define r5_h
 
+#include "regleModification.h"
 #include <stdio.h>
-
+class R5:public RegleModification{
+public:
+    R5();
+    ~R5();
+protected:
+    void executerRegleModification();
+};
 #endif /* r5_h */

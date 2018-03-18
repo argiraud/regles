@@ -9,6 +9,13 @@
 #ifndef r3_h
 #define r3_h
 
+#include "regle.h"
 #include <stdio.h>
-
+class R3:public Regle{
+public:
+    R3();
+    ~R3();
+protected:
+    bool executerRegle();
+};
 #endif /* r3_h */

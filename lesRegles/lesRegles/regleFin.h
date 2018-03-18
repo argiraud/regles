@@ -9,6 +9,13 @@
 #ifndef regleFin_h
 #define regleFin_h
 
+#include "regleModification.h"
 #include <stdio.h>
-
+class RegleFin: public RegleModification{
+public:
+    RegleFin();
+    ~RegleFin();
+protected:
+    void executerRegleModification();
+};
 #endif /* regleFin_h */
