@@ -22,6 +22,7 @@
 		326B08B3205DDF1C0023051D /* r5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B08B1205DDF1C0023051D /* r5.cpp */; };
 		326B08B6205DDF250023051D /* r6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326B08B4205DDF250023051D /* r6.cpp */; };
 		326E97E7205C98A900302C2F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326E97E6205C98A900302C2F /* main.cpp */; };
+		32DF14572061AF3600440067 /* ConteneurRegles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32DF14552061AF3600440067 /* ConteneurRegles.cpp */; };
 		8F0F5665205F161200E7AADD /* PlanTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F5664205F161200E7AADD /* PlanTest.cpp */; };
 		8F0F5668205F1F8600E7AADD /* PlanTestExtreme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F5667205F1F8600E7AADD /* PlanTestExtreme.cpp */; };
 		8F0F566B205F205600E7AADD /* PlanTestControle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F566A205F205600E7AADD /* PlanTestControle.cpp */; };
@@ -70,6 +71,8 @@
 		326B08B5205DDF250023051D /* r6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = r6.h; sourceTree = "<group>"; };
 		326E97E3205C98A900302C2F /* lesRegles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lesRegles; sourceTree = BUILT_PRODUCTS_DIR; };
 		326E97E6205C98A900302C2F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		32DF14552061AF3600440067 /* ConteneurRegles.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConteneurRegles.cpp; sourceTree = "<group>"; };
+		32DF14562061AF3600440067 /* ConteneurRegles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConteneurRegles.h; sourceTree = "<group>"; };
 		8F0F5664205F161200E7AADD /* PlanTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlanTest.cpp; sourceTree = "<group>"; };
 		8F0F5666205F163200E7AADD /* PlanTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanTest.h; sourceTree = "<group>"; };
 		8F0F5667205F1F8600E7AADD /* PlanTestExtreme.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlanTestExtreme.cpp; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				8F0F5669205F1F9600E7AADD /* PlanTestExtreme.h */,
 				8F0F566A205F205600E7AADD /* PlanTestControle.cpp */,
 				8F0F566C205F206300E7AADD /* PlanTestControle.h */,
+				32DF14552061AF3600440067 /* ConteneurRegles.cpp */,
+				32DF14562061AF3600440067 /* ConteneurRegles.h */,
 			);
 			path = lesRegles;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 				326B08AD205DDEFB0023051D /* r3.cpp in Sources */,
 				326B08A1205DDEA00023051D /* regleDebut.cpp in Sources */,
 				8F0F5665205F161200E7AADD /* PlanTest.cpp in Sources */,
+				32DF14572061AF3600440067 /* ConteneurRegles.cpp in Sources */,
 				326B088F205DDE0E0023051D /* donnees.cpp in Sources */,
 				326B089E205DDE8E0023051D /* regleModification.cpp in Sources */,
 				326B08B6205DDF250023051D /* r6.cpp in Sources */,
