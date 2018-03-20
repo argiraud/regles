@@ -7,3 +7,9 @@
 //
 
 #include "r5.h"
+R5::~R5(){
+    
+}
+void R5::executerRegleModification(){
+    donnees->setD5(donnees->getD5()+donnees->getD4()+donnees->getD1());
+}

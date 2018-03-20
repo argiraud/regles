@@ -14,14 +14,15 @@
 class Regle{
 public:
     Regle(string id);
-    ~Regle();
+    virtual ~Regle();
     bool executer(Donnees* data, Resultat* result);
     string getId();
 protected:
     Donnees* donnees;
     Resultat* resultat;
-    bool executerRegle();
+    virtual bool executerRegle(){ return true;};
 private:
+    string id;
     bool prevalidation();
     void postvalidation();
 };

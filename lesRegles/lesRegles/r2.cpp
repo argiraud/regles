@@ -7,3 +7,9 @@
 //
 
 #include "r2.h"
+R2::~R2(){
+    
+}
+bool R2::executerRegle(){
+    return (donnees->getD1()-donnees->getD4())%2 == 0;
+}

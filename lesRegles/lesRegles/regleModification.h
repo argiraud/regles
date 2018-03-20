@@ -12,11 +12,11 @@
 #include <stdio.h>
 #include <string>
 using namespace std;
-class RegleModification : Regle{
+class RegleModification : public Regle{
 public:
     RegleModification(string id);
     ~RegleModification();
     bool executerRegle();
-    void executerRegleModification();
+    virtual void executerRegleModification();
 };
 #endif /* regleModification_h */
