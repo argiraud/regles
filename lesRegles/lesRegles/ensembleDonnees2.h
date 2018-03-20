@@ -10,8 +10,8 @@
 #define ensembleDonnees2_h
 
 #include <stdio.h>
-
-class EnsembleDonnees2{
+#include "donnees.h"
+class EnsembleDonnees2:public Donnees{
 public:
     EnsembleDonnees2();
     ~EnsembleDonnees2();

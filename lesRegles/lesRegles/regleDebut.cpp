@@ -7,3 +7,9 @@
 //
 
 #include "regleDebut.h"
+RegleDebut::~RegleDebut(){
+    
+}
+void RegleDebut::executerRegleModification(){
+    donnees->setD1(min(donnees->getD1(),10));
+}

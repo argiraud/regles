@@ -7,3 +7,10 @@
 //
 
 #include "r1.h"
+R1::~R1(){
+    
+}
+bool R1::executerRegle(){
+    return donnees->getD1()%2 == 0;
+}
+

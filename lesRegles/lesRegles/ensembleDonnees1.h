@@ -8,13 +8,13 @@
 
 #ifndef ensembleDonnees1_h
 #define ensembleDonnees1_h
-
+#include "donnees.h"
 #include <stdio.h>
 
-class EnsembleDonnees1{
+class EnsembleDonnees1: public Donnees{
 public:
     EnsembleDonnees1();
-    ~EnsembleDonnees1();
+   ~EnsembleDonnees1();
 };
 
 #endif /* ensembleDonnees1_h */

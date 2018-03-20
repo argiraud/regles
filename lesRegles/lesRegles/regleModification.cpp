@@ -7,3 +7,13 @@
 //
 
 #include "regleModification.h"
+RegleModification::RegleModification(string id) : Regle(id){}
+RegleModification::~RegleModification(){}
+
+bool RegleModification::executerRegle(){
+    executerRegleModification();
+    return true;
+}
+
+
+

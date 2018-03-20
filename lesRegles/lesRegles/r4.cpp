@@ -7,3 +7,9 @@
 //
 
 #include "r4.h"
+R4::~R4(){
+    
+}
+void R4::executerRegleModification(){
+    donnees->setD1(donnees->getD1()-3);
+}

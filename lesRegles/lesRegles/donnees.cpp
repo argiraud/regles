@@ -9,6 +9,11 @@
 #include "donnees.h"
 using namespace std;
 Donnees::Donnees(int d1, int d2, int d3, int d4, int d5)  {
+    d1=1;
+    d2=2;
+    d3=3;
+    d4=4;
+    d5=5;
     setD1(1);
     setD2(1);
     setD3(1);
