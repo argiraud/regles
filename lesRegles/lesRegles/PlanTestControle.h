@@ -9,5 +9,17 @@
 #ifndef PlanTestControle_h
 #define PlanTestControle_h
 
+#include "PlanTestExtreme.h"
+#include "r3.h"
+#include "regleDebut.h"
+#include "regleFin.h"
+
+class PlanTestControle : public PlanTestExtreme{
+public:
+    PlanTestControle();
+    ~PlanTestControle();
+protected:
+    ConteneurRegles* chargerRegles();
+};
 
 #endif /* PlanTestControle_h */

@@ -26,7 +26,7 @@ public:
     bool setD3(int _d3);
     bool setD4(int _d4);
     bool setD5(int _d5);
-    std::string toString();
+    std::string toString()const;
     bool valide();
 private:
     int d1;

@@ -7,11 +7,14 @@
 //
 
 #include <stdio.h>
-#include "PlanTestExtreme.h"
-class PlanTestControle : public PlanTestExtreme{
-public:
-    PlanTestControle();
-    ~PlanTestControle();
-protected:
-    //ConteneurRegles* chargerRegles()
-};
+#include "PlanTest.h"
+
+PlanTestControle::*chargerRegles(){
+    ConteneurRegles *conteneur1 = new ConteneurRegles(new RegleDebut());
+    ConteneurRegles *conteneur2 = new ConteneurRegles(new R2());
+    conteneur1->setSuivantPositif(*new ConteneurRegles(new R4()));
+    conteneur2->setSuivantNegatif(*new ConteneurRegles(new R6()));
+    conteneur2->setSuivantPositif(*new ConteneurRegles(new R5()));
+    conteneur1->setSuivantNegatif(conteneur2);
+    return conteneur1;
+}

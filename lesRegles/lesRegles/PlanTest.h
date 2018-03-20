@@ -10,18 +10,23 @@
 #define PlanTest_h
 #include "resultat.h"
 #include "donnees.h"
+#include "ConteneurRegles.h"
+#include "r1.h"
+#include "r4.h"
+#include "r5.h"
+
 class PlanTest{
 public:
     PlanTest();
-    ~PlanTest();
+    virtual ~PlanTest();
     Resultat* getResultat();
     void appliquer(Donnees donnees);
     void initialiserRegles();
 private:
     Resultat* resultat;
-   // ConteneurRegles* conteneurRegleDepart
+    ConteneurRegles* conteneurRegleDepart;
 protected:
-  //  ConteneurRegles *chargerRegles();
+    virtual ConteneurRegles *chargerRegles();
 };
 
 #endif /* PlanTest_h */

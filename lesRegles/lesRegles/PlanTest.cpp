@@ -8,3 +8,17 @@
 
 #include <stdio.h>
 #include "PlanTest.h"
+
+
+
+
+void PlanTest::initialiserRegles(){
+    conteneurRegleDepart = chargerRegles();
+}
+
+ConteneurRegles PlanTest::*chargerRegles(){
+    ConteneurRegles conteneur = *new ConteneurRegles(new R1());
+    conteneur.setSuivantNegatif(*new ConteneurRegles(new R5()));
+    conteneur.setSuivantPositif(*new ConteneurRegles(new R4()));
+    return conteneur;
+}

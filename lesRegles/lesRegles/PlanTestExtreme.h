@@ -8,12 +8,16 @@
 
 #ifndef PlanTestExtreme_h
 #define PlanTestExtreme_h
+
 #include "PlanTest.h"
+#include "r2.h"
+#include "r6.h"
+
 class PlanTestExtreme : public PlanTest{
 public:
     PlanTestExtreme();
     ~PlanTestExtreme();
 protected:
-    //ConteneurRegles* chargerRegles()
-}
+    ConteneurRegles* chargerRegles();
+};
 #endif /* PlanTestExtreme_h */
