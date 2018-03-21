@@ -10,15 +10,26 @@
 #include "PlanTest.h"
 
 
+PlanTest::~PlanTest(){
+    delete resultat;
+    delete conteneurRegleDepart;
+}
 
+Resultat* PlanTest::getResultat(){
+    return this->resultat;
+}
 
 void PlanTest::initialiserRegles(){
     conteneurRegleDepart = chargerRegles();
 }
 
-ConteneurRegles PlanTest::*chargerRegles(){
-    ConteneurRegles conteneur = *new ConteneurRegles(new R1());
-    conteneur.setSuivantNegatif(*new ConteneurRegles(new R5()));
-    conteneur.setSuivantPositif(*new ConteneurRegles(new R4()));
+ConteneurRegles* PlanTest::chargerRegles(){
+    ConteneurRegles* conteneur = new ConteneurRegles(new R1());
+    conteneur->setSuivantNegatif(new ConteneurRegles(new R5()));
+    conteneur->setSuivantPositif(new ConteneurRegles(new R4()));
     return conteneur;
+}
+
+void PlanTest::appliquer(Donnees donnees){
+    //??
 }
