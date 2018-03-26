@@ -37,6 +37,3 @@ void Resultat::completerTest( Donnees  donnee){
    ajouterInformation(donnee.toString());
 }
 
-Resultat::~Resultat(){
-    
-}

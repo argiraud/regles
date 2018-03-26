@@ -16,8 +16,8 @@
 
 class PlanTestControle : public PlanTestExtreme{
 public:
-    PlanTestControle():PlanTestExtreme(){}
-   ~PlanTestControle();
+    PlanTestControle():PlanTestExtreme(){};
+    ~PlanTestControle();
 protected:
     ConteneurRegles* chargerRegles();
 };
