@@ -10,14 +10,14 @@
 #define PlanTestControle_h
 
 #include "PlanTestExtreme.h"
-//#include "r3.h"
+#include "r3.h"
 #include "regleDebut.h"
 #include "regleFin.h"
 
 class PlanTestControle : public PlanTestExtreme{
 public:
-    PlanTestControle();
-    ~PlanTestControle();
+    PlanTestControle():PlanTestExtreme(){}
+   ~PlanTestControle();
 protected:
     ConteneurRegles* chargerRegles();
 };

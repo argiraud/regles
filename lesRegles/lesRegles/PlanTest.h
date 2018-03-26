@@ -14,9 +14,6 @@
 #include "r1.h"
 #include "r4.h"
 #include "r5.h"
-#include "r2.h"
-#include "r3.h"
-#include "r6.h"
 
 class PlanTest{
 public:
