@@ -31,5 +31,14 @@ ConteneurRegles* PlanTest::chargerRegles(){
 }
 
 void PlanTest::appliquer(Donnees donnees){
-    //??
+    bool test;
+    ConteneurRegles *conteneur = conteneurRegleDepart;
+    while (conteneur != NULL) {
+        test=conteneur->courante->executer(&donnees, resultat);
+        if (test) {
+            conteneur=conteneur->suivantPositif;
+        }
+        else
+            conteneur=conteneur->suivantNegatif;
+    }
 }
