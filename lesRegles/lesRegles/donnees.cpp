@@ -63,6 +63,7 @@ bool Donnees::setD5(int _d5){
 bool Donnees::valide(){
     return setD2(this->d2) && setD3(this->d3) && setD5(this->d5);
 }
+
 string Donnees::toString(){
     return "D("+to_string(d1)+"/"+to_string(d2)+"/"+to_string(d3)+"/"+to_string(d4)+"/"+to_string(d5)+")";
 }
