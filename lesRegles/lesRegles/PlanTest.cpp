@@ -9,6 +9,9 @@
 #include <stdio.h>
 #include "PlanTest.h"
 
+PlanTest::PlanTest(){
+    
+}
 
 PlanTest::~PlanTest(){
     delete resultat;

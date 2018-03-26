@@ -19,3 +19,6 @@ ConteneurRegles* PlanTestControle::chargerRegles(){
 
     return conteneur;
 }
+
+PlanTestControle::~PlanTestControle(){
+}

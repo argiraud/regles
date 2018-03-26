@@ -14,7 +14,9 @@ Resultat::Resultat(Donnees donnee){
     ajouterInformation(asctime(localtime(&now)));
     ajouterInformation(donnee.toString());
 }
-
+Resultat::~Resultat(){
+    
+}
 void Resultat::ajouterInformation(string info){
     information = information + info + "\n";
 }
