@@ -18,7 +18,7 @@ public:
     void setSuivantPositif(ConteneurRegles *suivant){*suivantPositif = *suivant;}
     void setSuivantNegatif(ConteneurRegles *suivant){*suivantNegatif = *suivant;}
     Regle *courante;
-    ConteneurRegles *suivantPositif;
-    ConteneurRegles *suivantNegatif;
+    ConteneurRegles *suivantPositif=NULL;
+    ConteneurRegles *suivantNegatif=NULL;
 };
 #endif /* ConteneurRegles_h */

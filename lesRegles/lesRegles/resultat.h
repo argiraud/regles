@@ -14,13 +14,13 @@ using namespace std;
 
 class Resultat{
 public:
-    Resultat(Donnees const&);
+    Resultat(Donnees donnee);
     ~Resultat();
     void reussite(string id, string operation);
     void echec(string id, string operation);
     void info(string id, string operation);
     string getInformations(){return information;}
-    void completerTest(Donnees const&);
+    void completerTest(Donnees donnee);
 private:
     void ajouterInformation(string info);
     string information;

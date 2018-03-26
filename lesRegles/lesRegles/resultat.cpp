@@ -9,7 +9,7 @@
 #include "resultat.h"
 #include "time.h"
 
-Resultat::Resultat(Donnees const& donnee){
+Resultat::Resultat(Donnees donnee){
     time_t now = time(0);
     ajouterInformation(asctime(localtime(&now)));
     ajouterInformation(donnee.toString());
@@ -31,6 +31,6 @@ void Resultat::info(string id, string operation){
     ajouterInformation(id + " "  + operation);
 }
 
-void Resultat::completerTest(const Donnees & donnee){
+void Resultat::completerTest( Donnees  donnee){
    ajouterInformation(donnee.toString());
 }
