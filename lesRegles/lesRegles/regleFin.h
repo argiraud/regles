@@ -13,7 +13,7 @@
 #include <stdio.h>
 class RegleFin: public RegleModification{
 public:
-    RegleFin();
+    RegleFin():RegleModification("FIN"){}
     ~RegleFin();
 protected:
     void executerRegleModification();

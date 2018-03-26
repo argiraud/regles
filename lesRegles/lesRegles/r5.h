@@ -13,7 +13,7 @@
 #include <stdio.h>
 class R5:public RegleModification{
 public:
-    R5();
+    R5():RegleModification("R5"){}
     ~R5();
 protected:
     void executerRegleModification();

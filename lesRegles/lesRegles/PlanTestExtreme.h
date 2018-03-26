@@ -10,12 +10,12 @@
 #define PlanTestExtreme_h
 
 #include "PlanTest.h"
-#include "r2.h"
-#include "r6.h"
+//#include "r2.h"
+//#include "r6.h"
 
 class PlanTestExtreme : public PlanTest{
 public:
-    PlanTestExtreme();
+    PlanTestExtreme():PlanTest(){};
     ~PlanTestExtreme();
 protected:
     ConteneurRegles* chargerRegles();

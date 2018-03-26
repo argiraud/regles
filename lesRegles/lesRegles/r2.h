@@ -13,7 +13,7 @@
 #include <stdio.h>
 class R2:public Regle{
 public:
-    R2();
+    R2():Regle("R2"){}
     ~R2();
 protected:
     bool executerRegle();

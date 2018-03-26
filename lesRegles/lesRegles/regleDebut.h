@@ -12,7 +12,7 @@
 #include <stdio.h>
 class RegleDebut: public RegleModification{
 public:
-    RegleDebut();
+    RegleDebut():RegleModification("DEB"){}
     ~RegleDebut();
 protected:
    void executerRegleModification();
