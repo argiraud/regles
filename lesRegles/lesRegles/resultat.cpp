@@ -10,15 +10,17 @@
 #include "time.h"
 
 Resultat::Resultat(Donnees donnee){
+    information = donnee.toString();
     time_t now = time(0);
     ajouterInformation(asctime(localtime(&now)));
     ajouterInformation(donnee.toString());
+    
 }
 Resultat::~Resultat(){
     
 }
 void Resultat::ajouterInformation(string info){
-    information = information + info + "\n";
+    information = information + info + '\n';
 }
 
 void Resultat::reussite(string id, string operation){

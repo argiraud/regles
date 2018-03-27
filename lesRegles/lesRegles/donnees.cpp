@@ -9,16 +9,16 @@
 #include "donnees.h"
 using namespace std;
 Donnees::Donnees(int d1, int d2, int d3, int d4, int d5)  {
-    d1=1;
-    d2=2;
-    d3=3;
-    d4=4;
-    d5=5;
-    setD1(1);
-    setD2(1);
-    setD3(1);
-    setD4(1);
-    setD5(1);
+    this->d1=1;
+    this->d2=2;
+    this->d3=3;
+    this->d4=4;
+    this->d5=5;
+    setD1(d1);
+    setD2(d2);
+    setD3(d3);
+    setD4(d4);
+    setD5(d5);
 }
 Donnees::~Donnees(){
 }

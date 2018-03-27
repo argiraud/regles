@@ -28,6 +28,7 @@ public:
     bool setD5(int _d5);
     std::string toString();
     bool valide();
+    
 private:
     int d1;
     int d2;

@@ -35,6 +35,7 @@ ConteneurRegles* PlanTest::chargerRegles(){
 
 void PlanTest::appliquer(Donnees donnees){
     bool test;
+    resultat= new Resultat(donnees);
     ConteneurRegles *conteneur = conteneurRegleDepart;
     while (conteneur != NULL) {
         test=conteneur->courante->executer(&donnees, resultat);

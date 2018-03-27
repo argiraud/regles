@@ -14,7 +14,7 @@
 class EnsembleDonnees1: public Donnees{
 public:
     EnsembleDonnees1();
-   ~EnsembleDonnees1();
+    ~EnsembleDonnees1(){}
 };
 
 #endif /* ensembleDonnees1_h */
