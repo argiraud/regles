@@ -21,4 +21,5 @@ ConteneurRegles* PlanTestControle::chargerRegles(){
 }
 
 PlanTestControle::~PlanTestControle(){
+    
 }

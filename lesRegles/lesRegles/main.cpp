@@ -34,10 +34,10 @@ int main() {
         }
     for (int d = 0; d < 2; d++)
         delete donnees[d];
-    delete donnees;
+    delete[] donnees;
     for (int p = 0; p < 3; p++)
         delete plansTest[p];
-    delete plansTest;
+    delete[] plansTest;
     // Bonus #1 : Gestion des constructeurs et des destructeurs
     //cout << "Nombre Constructeurs : " << Resultat::getNbConstructeurs() << endl; //cout << "Nombre Destructeurs : " << Resultat::getNbDestructeurs() << endl;
     return 0; }

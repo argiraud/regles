@@ -10,7 +10,7 @@
 #define PlanTestControle_h
 
 #include "PlanTestExtreme.h"
-
+#include "r3.h"
 #include "regleDebut.h"
 #include "regleFin.h"
 

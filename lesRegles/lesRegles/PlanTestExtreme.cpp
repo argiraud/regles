@@ -18,5 +18,7 @@ ConteneurRegles* PlanTestExtreme:: chargerRegles(){
     conteneur1->setSuivantNegatif(conteneur2);
     return conteneur1;
 }
+
 PlanTestExtreme::~PlanTestExtreme(){
+    
 }

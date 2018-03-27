@@ -38,3 +38,4 @@ void Resultat::info(string id, string operation){
 void Resultat::completerTest( Donnees  donnee){
    ajouterInformation(donnee.toString());
 }
+
