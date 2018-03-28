@@ -45,4 +45,5 @@ void PlanTest::appliquer(Donnees donnees){
         else
             conteneur=conteneur->suivantNegatif;
     }
+    resultat->completerTest(donnees);
 }

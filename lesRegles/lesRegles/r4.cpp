@@ -11,5 +11,10 @@ R4::~R4(){
     
 }
 void R4::executerRegleModification(){
-    donnees->setD1(donnees->getD1()-3);
+    if(donnees->setD1(donnees->getD1()-3)){
+         getResultat()->reussite("R4", "D1 est modifie :"+to_string(donnees->getD1()));
+    }
+    
+    
+//    donnees->getD1()=donnees->getD1()-3;
 }

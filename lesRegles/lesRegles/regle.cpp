@@ -20,7 +20,7 @@ string Regle::getId(){
     return id;
 }
 
-bool Regle::executer(Donnees* donnees, Resultat* resultat){
+bool Regle:: executer(Donnees* donnees, Resultat* resultat){
     bool resultatExecution = false;
     this->donnees = donnees;
     this->resultat = resultat;
@@ -46,6 +46,6 @@ bool Regle::prevalidation(){
 }
 
 void Regle::postvalidation(){
-    if(!donnees->valide()) resultat->echec(id, "Postvalidation en echec");
+    if(donnees->valide()==false) resultat->echec(id, "Postvalidation en echec");
 }
 

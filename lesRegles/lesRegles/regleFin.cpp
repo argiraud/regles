@@ -11,5 +11,7 @@ RegleFin::~RegleFin(){
     
 }
 void RegleFin::executerRegleModification(){
-    donnees->setD5(donnees->getD5()+10);
+    if(donnees->setD5(donnees->getD5()+10)){
+          getResultat()->reussite("FIN", "D5 + 10 : "+to_string(donnees->getD5()));
+    }
 }
