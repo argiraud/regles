@@ -17,6 +17,7 @@ public:
     virtual ~Regle();
     bool executer(Donnees* data, Resultat* result);
     string getId();
+    Resultat* getResultat(){return resultat;}
 protected:
     Donnees* donnees;
     Resultat* resultat;

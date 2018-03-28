@@ -24,15 +24,15 @@ void Resultat::ajouterInformation(string info){
 }
 
 void Resultat::reussite(string id, string operation){
-    ajouterInformation(id + " " + operation);
+    ajouterInformation("Reussite - "+ id +" : " + operation);
 }
 
 void Resultat::echec(string id, string operation){
-    ajouterInformation(id + " " + operation);
+    ajouterInformation("ECHEC - "+ id +" : " + operation);
 }
 
 void Resultat::info(string id, string operation){
-    ajouterInformation(id + " "  + operation);
+    ajouterInformation("INFO - "+ id +" : " + operation);
 }
 
 void Resultat::completerTest( Donnees  donnee){

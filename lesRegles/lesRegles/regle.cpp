@@ -31,6 +31,7 @@ bool Regle::executer(Donnees* donnees, Resultat* resultat){
     prevalidation();
     resultatExecution = executerRegle();
     postvalidation();
+    
     resultat->info(id, "Fin de la regle");
     
     return resultatExecution;
@@ -39,11 +40,12 @@ bool Regle::executer(Donnees* donnees, Resultat* resultat){
 bool Regle::prevalidation(){
     if(donnees->valide()) return true;
     else{
-        resultat->info(id, "Prevalidation en echec");
+        resultat->echec(id, "Prevalidation en echec");
         return false;
     }
 }
 
 void Regle::postvalidation(){
-    if(!donnees->valide()) resultat->info(id, "Postvalidation en echec");
+    if(!donnees->valide()) resultat->echec(id, "Postvalidation en echec");
 }
+

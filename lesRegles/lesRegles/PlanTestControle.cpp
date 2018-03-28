@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include "PlanTestControle.h"
 
+
 ConteneurRegles* PlanTestControle::chargerRegles(){
     ConteneurRegles* conteneur = new ConteneurRegles(new R3());
     conteneur->setSuivantPositif(new ConteneurRegles(new RegleDebut()));

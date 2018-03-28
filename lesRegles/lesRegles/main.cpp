@@ -22,8 +22,9 @@ int main() {
     plansTest[0] = new PlanTest();
     plansTest[1] = new PlanTestExtreme();
     plansTest[2] = new PlanTestControle();
-    for (int p = 0; p < 3; p++)
+    for (int p=0; p < 3; p++){
         plansTest[p]->initialiserRegles();
+    }
     for (int d = 0; d < 2; d++)
         for (int p = 0; p < 3; p++)
         {
