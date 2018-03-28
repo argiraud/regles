@@ -40,7 +40,7 @@ bool Donnees::setD2(int _d2){
         return true;
     }
     else {
-        //cout << "setD2 FAUX" << endl;
+      //  cout << "setD2 FAUX" << endl;
         return false;
     }
     
@@ -68,12 +68,12 @@ bool Donnees::setD4(int _d4){
     
 }
 bool Donnees::setD5(int _d5){
-    if(_d5!=d1 && d5!=d2 && d5!=d3 && d5!=d4){
+    if(_d5!=d1 && _d5!=d2 && _d5!=d3 && _d5!=d4){
         d5=_d5;
         return true;
     }
     else {
-        cout << "setD5 FAUX" << endl;
+       // cout << "setD5 FAUX" << endl;
         return false;
     }
 }

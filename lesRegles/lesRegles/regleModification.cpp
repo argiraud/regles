@@ -15,9 +15,7 @@ bool RegleModification::executerRegle(){
     return true;
 }
 
-void RegleModification::executerRegleModification(){
-    
-}
+
 
 
 

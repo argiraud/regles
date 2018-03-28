@@ -17,6 +17,6 @@ public:
     RegleModification(string id);
     ~RegleModification();
     bool executerRegle();
-    virtual void executerRegleModification();
+    virtual void executerRegleModification(){}
 };
 #endif /* regleModification_h */
