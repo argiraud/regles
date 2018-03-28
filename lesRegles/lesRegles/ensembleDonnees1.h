@@ -10,11 +10,12 @@
 #define ensembleDonnees1_h
 #include "donnees.h"
 #include <stdio.h>
+#include "resultat.h"
 
 class EnsembleDonnees1: public Donnees{
 public:
     EnsembleDonnees1();
-    ~EnsembleDonnees1(){}
+    ~EnsembleDonnees1(){Resultat::nbDestructeurs ++;}
 };
 
 #endif /* ensembleDonnees1_h */

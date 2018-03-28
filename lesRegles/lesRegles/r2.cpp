@@ -8,7 +8,7 @@
 
 #include "r2.h"
 R2::~R2(){
-    
+    Resultat::nbDestructeurs ++;
 }
 bool R2::executerRegle(){
     if((donnees->getD1()-donnees->getD4())%2 == 0){

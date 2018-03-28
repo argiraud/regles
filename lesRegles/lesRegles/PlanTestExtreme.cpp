@@ -20,5 +20,5 @@ ConteneurRegles* PlanTestExtreme:: chargerRegles(){
 }
 
 PlanTestExtreme::~PlanTestExtreme(){
-    
+    Resultat::nbDestructeurs ++;
 }

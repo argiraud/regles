@@ -10,4 +10,9 @@
 
 ConteneurRegles::ConteneurRegles(Regle *regle){
     courante = regle;
+    Resultat::nbConstructeurs ++;
+}
+
+ConteneurRegles::~ConteneurRegles(){
+    Resultat::nbDestructeurs ++;
 }

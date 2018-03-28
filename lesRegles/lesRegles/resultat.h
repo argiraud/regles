@@ -21,6 +21,10 @@ public:
     void info(string id, string operation);
     string getInformations(){return information;}
     void completerTest(Donnees donnee);
+    int static getNbConstructeurs(){return nbConstructeurs;}
+    int static getNbDestructeurs(){return nbDestructeurs;}
+    int static nbConstructeurs;
+    int static nbDestructeurs;
 private:
     void ajouterInformation(string info);
     string information;

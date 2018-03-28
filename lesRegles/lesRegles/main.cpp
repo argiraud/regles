@@ -13,6 +13,8 @@
 #include "PlanTestControle.h"
 #include "PlanTestExtreme.h"
 using namespace std;
+int Resultat::nbConstructeurs = 0;
+int Resultat::nbDestructeurs = 0;
 int main() {
     // Il va y en avoir plusieurs autres
     Donnees** donnees = new Donnees*[2];
@@ -40,5 +42,6 @@ int main() {
         delete plansTest[p];
     delete[] plansTest;
     // Bonus #1 : Gestion des constructeurs et des destructeurs
-    //cout << "Nombre Constructeurs : " << Resultat::getNbConstructeurs() << endl; //cout << "Nombre Destructeurs : " << Resultat::getNbDestructeurs() << endl;
+    cout << "Nombre Constructeurs : " << Resultat::getNbConstructeurs() << endl;
+    cout << "Nombre Destructeurs : " << Resultat::getNbDestructeurs() << endl;
     return 0; }

@@ -7,13 +7,15 @@
 //
 
 #include "regle.h"
+#include "resultat.h"
 
 Regle::Regle(string id){
     this->id=id;
+    Resultat::nbConstructeurs ++;
 }
 
 Regle::~Regle(){
-    
+    Resultat::nbDestructeurs ++;
 }
 
 string Regle::getId(){

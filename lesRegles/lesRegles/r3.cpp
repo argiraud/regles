@@ -8,7 +8,7 @@
 
 #include "r3.h"
 R3::~R3(){
-    
+    Resultat::nbDestructeurs ++;
 }
 bool R3::executerRegle(){
     if(donnees->getD1()%2 == 0 && donnees->getD3()%2 ==0){

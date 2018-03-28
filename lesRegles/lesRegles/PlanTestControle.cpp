@@ -22,5 +22,5 @@ ConteneurRegles* PlanTestControle::chargerRegles(){
 }
 
 PlanTestControle::~PlanTestControle(){
-    
+    Resultat::nbDestructeurs ++;
 }

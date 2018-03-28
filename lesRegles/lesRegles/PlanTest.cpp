@@ -10,12 +10,13 @@
 #include "PlanTest.h"
 
 PlanTest::PlanTest(){
-    
+    Resultat::nbConstructeurs ++;
 }
 
 PlanTest::~PlanTest(){
     delete resultat;
     delete conteneurRegleDepart;
+    Resultat::nbDestructeurs ++;
 }
 
 Resultat* PlanTest::getResultat(){

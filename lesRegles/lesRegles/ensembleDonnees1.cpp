@@ -7,7 +7,7 @@
 //
 
 #include "ensembleDonnees1.h"
+#include "resultat.h"
 
-
-EnsembleDonnees1::EnsembleDonnees1() : Donnees(5, 7, 10, 4, 3){}
+EnsembleDonnees1::EnsembleDonnees1() : Donnees(5, 7, 10, 4, 3){Resultat::nbConstructeurs ++;}
 

@@ -8,7 +8,7 @@
 
 #include "r4.h"
 R4::~R4(){
-    
+    Resultat::nbDestructeurs ++;
 }
 void R4::executerRegleModification(){
     if(donnees->setD1(donnees->getD1()-3)){

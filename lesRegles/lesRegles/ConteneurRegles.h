@@ -15,6 +15,7 @@
 class ConteneurRegles{
 public:
     ConteneurRegles(Regle *regle);
+    ~ConteneurRegles();
     void setSuivantPositif(ConteneurRegles *suivant){suivantPositif = suivant;}
     void setSuivantNegatif(ConteneurRegles *suivant){suivantNegatif = suivant;}
     Regle *courante;

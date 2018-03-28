@@ -7,8 +7,11 @@
 //
 
 #include "regleModification.h"
-RegleModification::RegleModification(string id) : Regle(id){}
-RegleModification::~RegleModification(){}
+RegleModification::RegleModification(string id) : Regle(id){Resultat::nbConstructeurs ++;}
+RegleModification::~RegleModification(){
+    Resultat::nbDestructeurs ++;
+    
+}
 
 bool RegleModification::executerRegle(){
     executerRegleModification();

@@ -12,7 +12,7 @@
 #include <stdio.h>
 class R1:public Regle{
 public:
-    R1():Regle("R1"){}
+    R1():Regle("R1"){Resultat::nbConstructeurs ++;}
     ~R1();
 protected:
     bool executerRegle();

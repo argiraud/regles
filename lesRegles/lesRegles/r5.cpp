@@ -8,7 +8,7 @@
 
 #include "r5.h"
 R5::~R5(){
-    
+    Resultat::nbDestructeurs ++;
 }
 void R5::executerRegleModification(){
     if(donnees->setD5(donnees->getD5()+donnees->getD4()+donnees->getD1())){

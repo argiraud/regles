@@ -13,7 +13,7 @@
 #include <stdio.h>
 class R6:public RegleModification{
 public:
-    R6():RegleModification("R6"){}
+    R6():RegleModification("R6"){Resultat::nbConstructeurs ++;}
     ~R6();
 protected:
     void executerRegleModification();

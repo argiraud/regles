@@ -8,7 +8,7 @@
 
 #include "regleFin.h"
 RegleFin::~RegleFin(){
-    
+    Resultat::nbDestructeurs ++;
 }
 void RegleFin::executerRegleModification(){
     if(donnees->setD5(donnees->getD5()+10)){

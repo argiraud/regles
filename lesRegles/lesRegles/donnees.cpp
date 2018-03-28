@@ -7,6 +7,8 @@
 //
 
 #include "donnees.h"
+#include "resultat.h"
+
 #include <iostream>
 using namespace std;
 Donnees::Donnees(int d1, int d2, int d3, int d4, int d5)  {
@@ -20,8 +22,10 @@ Donnees::Donnees(int d1, int d2, int d3, int d4, int d5)  {
     setD3(d3);
     setD4(d4);
     setD5(d5);
+    Resultat::nbConstructeurs ++;
 }
 Donnees::~Donnees(){
+    Resultat::nbDestructeurs ++;
 }
 bool Donnees::setD1(int _d1){
     if(_d1>=0){

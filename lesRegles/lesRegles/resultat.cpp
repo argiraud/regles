@@ -13,9 +13,10 @@ Resultat::Resultat(Donnees donnee){
     time_t now = time(0);
     ajouterInformation(asctime(localtime(&now)));
     ajouterInformation(donnee.toString());
+    Resultat::nbConstructeurs ++;
 }
 Resultat::~Resultat(){
-    
+    Resultat::nbDestructeurs ++;
 }
 void Resultat::ajouterInformation(string info){
     information = information + info + '\n';

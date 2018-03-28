@@ -13,7 +13,7 @@
 #include <stdio.h>
 class RegleFin: public RegleModification{
 public:
-    RegleFin():RegleModification("FIN"){}
+    RegleFin():RegleModification("FIN"){Resultat::nbConstructeurs ++;}
     ~RegleFin();
 protected:
     void executerRegleModification();

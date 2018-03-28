@@ -8,7 +8,7 @@
 
 #include "regleDebut.h"
 RegleDebut::~RegleDebut(){
-    
+    Resultat::nbDestructeurs ++;
 }
 void RegleDebut::executerRegleModification(){
     donnees->setD1(min(donnees->getD1(),10));

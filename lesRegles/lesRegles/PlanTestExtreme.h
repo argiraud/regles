@@ -15,7 +15,7 @@
 
 class PlanTestExtreme : public PlanTest{
 public:
-    PlanTestExtreme():PlanTest(){}
+    PlanTestExtreme():PlanTest(){Resultat::nbConstructeurs ++;}
     ~PlanTestExtreme();
 protected:
     ConteneurRegles* chargerRegles();
