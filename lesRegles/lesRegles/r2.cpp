@@ -11,5 +11,11 @@ R2::~R2(){
     
 }
 bool R2::executerRegle(){
-    return (donnees->getD1()-donnees->getD4())%2 == 0;
+    if((donnees->getD1()-donnees->getD4())%2 == 0){
+        getResultat()->reussite("R2", "D1-D4 est pair :"+to_string(donnees->getD1()-donnees->getD4()));
+        return true;
+    }
+    else{
+        return false;
+    }
 }
