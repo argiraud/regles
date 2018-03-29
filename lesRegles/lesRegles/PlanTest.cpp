@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <iostream>
 #include "PlanTest.h"
 
 PlanTest::PlanTest(){
@@ -28,23 +29,23 @@ void PlanTest::initialiserRegles(){
 }
 
 ConteneurRegles* PlanTest::chargerRegles(){
-    ConteneurRegles* conteneur = new ConteneurRegles(new R1());
-    conteneur->setSuivantNegatif(new ConteneurRegles(new R5()));
-    conteneur->setSuivantPositif(new ConteneurRegles(new R4()));
+    ConteneurRegles* conteneur = new ConteneurRegles(new R1(),new ConteneurRegles(new R4()), new ConteneurRegles(new R5()));
+
     return conteneur;
 }
 
 void PlanTest::appliquer(Donnees donnees){
     bool test;
+    if(resultat!= NULL) delete resultat;
     resultat= new Resultat(donnees);
     ConteneurRegles *conteneur = conteneurRegleDepart;
     while (conteneur != NULL) {
         test=conteneur->courante->executer(&donnees, resultat);
         if (test) {
-            conteneur=conteneur->suivantPositif;
+            conteneur=conteneur->getSuivantPositif();
         }
         else
-            conteneur=conteneur->suivantNegatif;
+            conteneur=conteneur->getSuivantNegatif();
     }
     resultat->completerTest(donnees);
 }

@@ -8,16 +8,12 @@
 
 #include <stdio.h>
 #include "PlanTestControle.h"
+#include <iostream>
 
 
 ConteneurRegles* PlanTestControle::chargerRegles(){
-    ConteneurRegles* conteneur = new ConteneurRegles(new R3());
-    conteneur->setSuivantPositif(new ConteneurRegles(new RegleDebut()));
-    conteneur->setSuivantNegatif(new ConteneurRegles(new RegleFin()));
-    conteneur->suivantPositif->setSuivantNegatif(PlanTestExtreme::chargerRegles());
-    conteneur->suivantPositif->setSuivantPositif(PlanTestExtreme::chargerRegles());
-
-
+    ConteneurRegles* conteneur = new ConteneurRegles(new R3(), new ConteneurRegles(new RegleDebut(),new ConteneurRegles(new R1(), new ConteneurRegles(new R4()), new ConteneurRegles(new R2(), new ConteneurRegles(new R5()), new ConteneurRegles(new R6())))), new ConteneurRegles( new RegleFin()));
+   
     return conteneur;
 }
 

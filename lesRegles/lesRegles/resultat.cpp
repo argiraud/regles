@@ -8,6 +8,8 @@
 
 #include "resultat.h"
 #include "time.h"
+int Resultat::nbConstructeurs = 0;
+int Resultat::nbDestructeurs = 0;
 
 Resultat::Resultat(Donnees donnee){
     time_t now = time(0);
