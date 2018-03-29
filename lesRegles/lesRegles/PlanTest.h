@@ -20,10 +20,10 @@ public:
     PlanTest();
     virtual ~PlanTest();
     Resultat* getResultat();
-    void appliquer(Donnees donnees);
+    void appliquer(Donnees *donnees);
     void initialiserRegles();
 private:
-    Resultat* resultat;
+    Resultat *resultat;
     ConteneurRegles* conteneurRegleDepart;
 protected:
     virtual ConteneurRegles *chargerRegles();

@@ -15,14 +15,15 @@
 class ConteneurRegles{
 public:
     ConteneurRegles(Regle *regle);
-    ConteneurRegles(Regle *regle, ConteneurRegles *suivant);
+    ConteneurRegles(Regle *regle, ConteneurRegles *suivantPositif);
     ConteneurRegles(Regle *regle, ConteneurRegles *suivantPositif, ConteneurRegles *suivantNegatif);
+    //ConteneurRegles(ConteneurRegles const& cont);
     ~ConteneurRegles();
     void setSuivantPositif(ConteneurRegles *suivant){suivantPositif = suivant;}
     void setSuivantNegatif(ConteneurRegles *suivant){suivantNegatif = suivant;}
     Regle *courante;
-    ConteneurRegles* getSuivantPositif(){return suivantPositif;}
-    ConteneurRegles* getSuivantNegatif(){return suivantNegatif;}
+    ConteneurRegles* getSuivantPositif()const{return suivantPositif;}
+    ConteneurRegles* getSuivantNegatif()const{return suivantNegatif;}
 
 private:
     ConteneurRegles *suivantPositif;

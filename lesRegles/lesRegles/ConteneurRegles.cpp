@@ -7,7 +7,7 @@
 //
 
 #include "ConteneurRegles.h"
-
+#include <iostream>
 ConteneurRegles::ConteneurRegles(Regle *regle){
     courante = regle;
     suivantPositif=nullptr;
@@ -30,9 +30,19 @@ ConteneurRegles::ConteneurRegles(Regle *regle, ConteneurRegles *suivantPositif, 
 
 }
 
+//ConteneurRegles::ConteneurRegles(ConteneurRegles const& cont){
+//    this->courante=cont.courante;
+//    this->suivantNegatif=cont.suivantNegatif;
+//    this->suivantPositif=cont.suivantPositif;
+//    Resultat::nbConstructeurs ++;
+//
+//}
+
 ConteneurRegles::~ConteneurRegles(){
+   // cout << "Destructeur de ConteneurRegle"<< endl;
+    Resultat::nbDestructeurs ++;
     if(this->suivantNegatif!=nullptr) delete suivantNegatif;
     if(this->suivantPositif!=nullptr) delete suivantPositif;
     delete this->courante;
-    Resultat::nbDestructeurs ++;
+    
 }

@@ -22,7 +22,7 @@ string Regle::getId(){
     return id;
 }
 
-bool Regle:: executer(Donnees* donnees, Resultat* resultat){
+bool Regle::executer(Donnees* donnees, Resultat* resultat){
     bool resultatExecution = false;
     this->donnees = donnees;
     this->resultat = resultat;

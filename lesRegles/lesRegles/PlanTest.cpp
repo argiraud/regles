@@ -34,18 +34,18 @@ ConteneurRegles* PlanTest::chargerRegles(){
     return conteneur;
 }
 
-void PlanTest::appliquer(Donnees donnees){
+void PlanTest::appliquer(Donnees *donnees){
     bool test;
-    if(resultat!= NULL) delete resultat;
-    resultat= new Resultat(donnees);
+    if(resultat!= nullptr) delete resultat;
+    resultat= new Resultat(*donnees);
     ConteneurRegles *conteneur = conteneurRegleDepart;
-    while (conteneur != NULL) {
-        test=conteneur->courante->executer(&donnees, resultat);
+    while (conteneur != nullptr) {
+        test=conteneur->courante->executer(donnees, resultat);
         if (test) {
             conteneur=conteneur->getSuivantPositif();
         }
         else
             conteneur=conteneur->getSuivantNegatif();
     }
-    resultat->completerTest(donnees);
+    resultat->completerTest(*donnees);
 }

@@ -22,14 +22,16 @@ int main() {
     plansTest[0] = new PlanTest();
     plansTest[1] = new PlanTestExtreme();
     plansTest[2] = new PlanTestControle();
+    
     for (int p=0; p < 3; p++){
         plansTest[p]->initialiserRegles();
     }
+
     for (int d = 0; d < 2; d++)
         for (int p = 0; p < 3; p++)
         {
             cout << "Plan de test " << p << " donnees " << d << endl;
-            plansTest[p]->appliquer(*donnees[d]);
+            plansTest[p]->appliquer(donnees[d]);
             cout << plansTest[p]->getResultat()->getInformations() << endl;
             // Bonus #2 : Surcharge de l'opérateur << dans Resultat
              //cout << *(plansTest[p]->getResultat()) << endl;
@@ -41,7 +43,7 @@ int main() {
         delete plansTest[p];
     delete plansTest;
     // Bonus #1 : Gestion des constructeurs et des destructeurs
-    cout << "Nombre Constructeurs : " << Resultat::getNbConstructeurs() << endl;
-    cout << "Nombre Destructeurs : " << Resultat::getNbDestructeurs() << endl;
+    cout << "Nombre Constructeurs Donnees: " << Resultat::getNbConstructeurs() << endl;
+    cout << "Nombre Destructeurs Donnees: " << Resultat::getNbDestructeurs() << endl;
     return 0;
 }

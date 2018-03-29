@@ -34,7 +34,6 @@ bool Donnees::setD1(int _d1){
     }
     
     else {
-        cout << "setD1 FAUX" << endl;
         return false;
     }
 }
@@ -44,7 +43,6 @@ bool Donnees::setD2(int _d2){
         return true;
     }
     else {
-      //  cout << "setD2 FAUX" << endl;
         return false;
     }
     
@@ -55,7 +53,6 @@ bool Donnees::setD3(int _d3){
         return true;
     }
     else {
-        cout << "setD3 FAUX" << endl;
         return false;
     }
     
@@ -66,7 +63,6 @@ bool Donnees::setD4(int _d4){
         return true;
     }
     else {
-        cout << "setD4 FAUX" << endl;
         return false;
     }
     
@@ -77,7 +73,6 @@ bool Donnees::setD5(int _d5){
         return true;
     }
     else {
-       // cout << "setD5 FAUX" << endl;
         return false;
     }
 }
@@ -85,7 +80,7 @@ bool Donnees::valide(){
     return setD2(getD2()) && setD3(getD3()) && setD5(getD5());
 }
 
-string Donnees::toString(){
+string Donnees::toString() const{
     return "D("+to_string(d1)+"/"+to_string(d2)+"/"+to_string(d3)+"/"+to_string(d4)+"/"+to_string(d5)+")";
 }
 
