@@ -25,6 +25,8 @@ public:
     int static getNbDestructeurs(){return nbDestructeurs;}
     int static nbConstructeurs;
     int static nbDestructeurs;
+    int static constr;
+    int static dest;
 private:
     void ajouterInformation(string info);
     string information;

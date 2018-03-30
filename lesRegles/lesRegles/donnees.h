@@ -15,7 +15,7 @@
 class Donnees{
 public:
     Donnees(int d1, int d2, int d3, int d4, int d5);
-    ~Donnees();
+    virtual ~Donnees();
     int getD1(){return d1;}
     int getD2(){return d2;}
     int getD3(){return d3;}

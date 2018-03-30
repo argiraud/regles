@@ -11,6 +11,8 @@
 #include "time.h"
 int Resultat::nbConstructeurs = 0;
 int Resultat::nbDestructeurs = 0;
+int Resultat::constr = 0;
+int Resultat::dest = 0;
 Resultat::Resultat(Donnees const& donnee){
     time_t now = time(0);
     ajouterInformation(asctime(localtime(&now)));
