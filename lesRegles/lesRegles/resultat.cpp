@@ -43,3 +43,9 @@ void Resultat::completerTest(Donnees const& donnee){
    ajouterInformation(donnee.toString());
 }
 
+
+/*ostream& Resultat::operator<<(ostream& s, const Resultat& r){
+    s << r.information;
+    return s;
+}*/
+

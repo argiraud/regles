@@ -27,6 +27,7 @@ public:
     int static nbDestructeurs;
     int static constr;
     int static dest;
+    //friend ostream& operator<<(ostream& s, Resultat& r);
 private:
     void ajouterInformation(string info);
     string information;
