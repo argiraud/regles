@@ -44,8 +44,8 @@ void Resultat::completerTest(Donnees const& donnee){
 }
 
 
-/*ostream& Resultat::operator<<(ostream& s, const Resultat& r){
-    s << r.information;
+ostream& operator<<(ostream& s, const Resultat& r){
+    s << r.getInformations();
     return s;
-}*/
+}
 

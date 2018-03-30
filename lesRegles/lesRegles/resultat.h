@@ -19,7 +19,7 @@ public:
     void reussite(string id, string operation);
     void echec(string id, string operation);
     void info(string id, string operation);
-    string getInformations(){return information;}
+    string getInformations()const{return information;}
     void completerTest(Donnees const& donnee);
     int static getNbConstructeurs(){return nbConstructeurs;}
     int static getNbDestructeurs(){return nbDestructeurs;}
@@ -27,7 +27,7 @@ public:
     int static nbDestructeurs;
     int static constr;
     int static dest;
-    //friend ostream& operator<<(ostream& s, Resultat& r);
+    friend ostream& operator<<(ostream& s, Resultat& r);
 private:
     void ajouterInformation(string info);
     string information;

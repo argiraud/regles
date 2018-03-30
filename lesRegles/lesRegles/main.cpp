@@ -32,9 +32,9 @@ int main() {
         {
             cout << "Plan de test " << p << " donnees " << d << endl;
             plansTest[p]->appliquer(donnees[d]);
-            cout << plansTest[p]->getResultat()->getInformations() << endl;
+            //cout << plansTest[p]->getResultat()->getInformations() << endl;
             // Bonus #2 : Surcharge de l'opérateur << dans Resultat
-             //cout << *(plansTest[p]->getResultat()) << endl;
+             cout << *(plansTest[p]->getResultat()) << endl;
         }
     for (int d = 0; d < 2; d++)
         delete donnees[d];
